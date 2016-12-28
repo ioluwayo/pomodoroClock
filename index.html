@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.6.0/math.min.js"></script>
+    <script src="script.js"></script>
+    <audio id="buzzer" src="http://onlineclock.net/audio/options/default.mp3"></audio>
+    </head>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="text-center">POMODORO CLOCK</h1>
+    </div>
+    <div class="setup text-center">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <h3 id="session-text">SESSION (Minutes)</h3>
+                <div class="input-group center">
+                    <span class="input-group-btn">
+                        <button id="session-minus" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input id="session-length" type="text" name="quant[1]" class="form-control input-number" value="25" min="1" max="100">
+                    <span class="input-group-btn">
+                        <button id="session-plus" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 id="break-text">BREAK (Minutes)</h3>
+                <div class="input-group center">
+                    <span class="input-group-btn">
+                        <button id="break-minus" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input id="break-length" type="text" name="quant[2]" class="form-control input-number" value="5" min="1" max="100">
+                    <span class="input-group-btn">
+                        <button id="break-plus" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clock">
+        <div class="time-display">
+            <h1 class="text-center" id="time">00:25:00</h1>
+            
+        </div><!--END OF TIME DISPLAY-->
+        
+        <div class="controls">
+            <div>
+                <div class="row">
+                    <div class="start-button col-md-offset-3 col-md-6">
+                        <p><a id="start" class="btn btn-lg btn-block btn-success" href="#" role="button" >START</a></p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="reset-button col-md-offset-3 col-md-6">
+                    <p><a id="reset" class="btn btn-lg btn-block btn-warning" href="#" role="button">RESET</a></p>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div><!--END OF CLOCK-->
+</div>
+    
+</div><!-- end of container-fluid -->
+</body>
+</html>

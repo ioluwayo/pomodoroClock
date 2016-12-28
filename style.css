@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,300,700);
+html{
+    padding: 1.5vw;
+}
+body{
+  padding-top:1vw;
+  background-color:#112;
+  background-size:cover;
+}
+.jumbotron{
+    background-color:#112;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0vw;
+    color: white;
+}
+.setup{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+.time-display{
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 1vw;
+    color: white;
+}
+#time{
+    font-size: 15vw;
+}
+.btn-lg{
+    border-radius: 0%;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 4vw;
+    opacity: 0.7;
+}
+.center{
+    width: 150px;
+    margin: auto;
+}
+.btn-number{
+    height: auto;
+    border-radius: 0%;
+}
